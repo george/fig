@@ -56,7 +56,6 @@ public class FigTest {
         server.start();
 
         WebResponse response = webClient.post("http://127.0.0.1:3001/post", "Hello, world!");
-        System.out.println(response.getData());
 
         assertEquals(response.getResponseCode(), 200);
         assertEquals(response.getData(), "Hello, world!");
