@@ -10,6 +10,8 @@ FigWebClient webClient = new FigWebClient();
 webClient.getAsync("https://google.com/", (response) -> {
     int responseCode = response.getResponseCode();
     String data = response.getData();
+    
+    //Response logic here
 });
         
 webClient.postAsync("https://google.com", "Hello, world!", (response) -> {
